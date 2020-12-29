@@ -60,4 +60,4 @@ X_test = tf.constant(test_texts)
 preds = model.predict(X_test)
 test_labels = labelize(preds)
 
-write_labels(test_labels, get_test_label_path)
+write_labels(test_labels, get_test_label_path())
